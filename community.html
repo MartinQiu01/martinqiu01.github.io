@@ -1,0 +1,255 @@
+<!DOCTYPE html >
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+		<title>爱分享论坛</title>
+		<script type="text/javascript" src="js/tool.js"></script>
+		<script type="text/javascript" src="js/base.js"></script>
+		<script type="text/javascript" src="js/base_drag.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link href="css/4.css" rel="stylesheet" type="text/css" />
+
+	</head>
+	<body style="background-color: rgb(22,22,22);">
+
+		<div id="header" style="background:rgba(0,0,0,0.0)">
+
+			<div class="logo" style="margin-top: 10px;"><img src="images/logo0.gif" alt="" /></div>
+
+			<div class="reg">
+				<h3 style="color:white;">注册</h3>
+			</div>
+			<div class="login">
+				<h3 style="color:white;">登录</h3>
+			</div>
+		</div>
+
+		<div id="reg">
+			<h2><img src="images/close.png" alt="" class="close" />会员注册</h2>
+			<form name="reg">
+				<dl>
+					<dd>用 户 名： <input type="text" name="user" class="text" />
+						<span class="info info_user">请输入用户名，2~20位，由字母、数字和下划线组成！</span>
+						<span class="error error_user">输入不合法，请重新输入！</span>
+						<span class="succ succ_user">可用</span>
+					</dd>
+					<dd>密　　码： <input type="password" name="pass" class="text" />
+						<span class="info info_pass">
+							<p>安全级别：<strong class="s s1">■</strong><strong class="s s2">■</strong><strong class="s s3">■</strong> <strong
+								 class="s s4" style="font-weight:normal;"></strong></p>
+							<p><strong class="q1" style="font-weight:normal;">○</strong> 6-20 个字符</p>
+							<p><strong class="q2" style="font-weight:normal;">○</strong> 只能包含大小写字母、数字和非空格字符</p>
+							<p><strong class="q3" style="font-weight:normal;">○</strong> 大、小写字母、数字、非空字符，2种以上</p>
+						</span>
+						<span class="error error_pass">输入不合法，请重新输入！</span>
+						<span class="succ succ_pass">可用</span>
+					</dd>
+					<dd>密码确认： <input type="password" name="notpass" class="text" />
+						<span class="info info_notpass">请再一次输入密码！</span>
+						<span class="error error_notpass">密码不一致，请重新输入！</span>
+						<span class="succ succ_notpass">可用</span>
+					</dd>
+					<dd><span style="vertical-align:-2px">提　　问：</span> <select name="ques">
+							<option value="0">- - - - 请选择 - - - -</option>
+							<option value="1">- - 您最喜欢吃的菜</option>
+							<option value="2">- - 您的狗狗的名字</option>
+							<option value="3">- - 您的出生地</option>
+							<option value="4">- - 您最喜欢的明星</option>
+						</select>
+						<span class="error error_ques">尚未选择提问，请选择！</span>
+					</dd>
+					<dd>回　　答： <input type="text" name="ans" class="text" />
+						<span class="info info_ans">请输入回答，2~32位！</span>
+						<span class="error error_ans">回答不合法，请重新输入！</span>
+						<span class="succ succ_ans">可用</span>
+					</dd>
+					<dd>电子邮件： <input type="text" name="email" class="text" autocomplete="off" />
+						<span class="info info_email">请输入电子邮件！</span>
+						<span class="error error_email">邮件不合法，请重新输入！</span>
+						<span class="succ succ_email">可用</span>
+						<ul class="all_email">
+							<li><span></span>@qq.com</li>
+							<li><span></span>@163.com</li>
+							<li><span></span>@sohu.com</li>
+							<li><span></span>@sina.com.cn</li>
+							<li><span></span>@gmail.com</li>
+						</ul>
+					</dd>
+					<dd class="birthday"><span style="vertical-align:-2px">生　　日：</span> <select name="year">
+							<option value="0">- 年 -</option>
+						</select> -
+						<select name="month">
+							<option value="0">- 月 -</option>
+						</select> -
+						<select name="day">
+							<option value="0">- 日 -</option>
+						</select>
+						<span class="error error_birthday">尚未全部选择，请选择！</span>
+					</dd>
+					<dd style="height:105px;"><span style="vertical-align:85px">备　　注：</span> <textarea name="ps"></textarea></dd>
+					<dd style="display:block;" class="ps">还可以输入<strong class="num">200</strong>字</dd>
+					<dd style="display:none;" class="ps">已超过<strong class="num"></strong>字，<span class="clear">清尾</span></dd>
+					<dd style="padding:0 0 0 80px;"><input type="button" name="sub" class="submit" /></dd>
+				</dl>
+			</form>
+		</div>
+
+		<div id="login">
+			<h2><img src="images/close.png" alt="" class="close" />网站登录</h2>
+			<div class="user">帐 号：<input type="text" name="user" class="text" /></div>
+			<div class="pass">密 码：<input type="password" name="pass" class="text" /></div>
+			<div class="button"><input type="button" class="submit" value="" /></div>
+			<div class="other">注册新用户 | 忘记密码？</div>
+		</div>
+
+		<div id="nav">
+			<ul class="about">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<ul class="black">
+				<li>返回首页</li>
+				<li>发表帖子</li>
+				<li>最新帖子</li>
+				<li>热门帖子</li>
+				<li>我的帖子</li>
+			</ul>
+			<div class="nav_bg">
+				<ul class="white">
+					<li>返回首页</li>
+					<li>发表帖子</li>
+					<li>最新帖子</li>
+					<li>热门帖子</li>
+					<li>我的帖子</li>
+				</ul>
+			</div>
+		</div>
+
+
+
+
+		<div id="main">
+			<div id="sidebar" style="background-color: rgb(243,243,243);">
+				<h2>最新帖子</h2>
+				<ul>
+					<li><a href="###">陈坤这个角色很赞！让我知道了...</a></li>
+					<li><a href="###">陈坤这个角色很赞！让我知道了...</a></li>
+					<li><a href="###">陈坤这个角色很赞！让我知道了...</a></li>
+					<li><a href="###">陈坤这个角色很赞！让我知道了...</a></li>
+					<li><a href="###">陈坤这个角色很赞！让我知道了...</a></li>
+				</ul>
+				<h2>热门帖子</h2>
+				<ul>
+					<li><a href="###">陈坤这个角色很赞！让我知道了...</a></li>
+					<li><a href="###">陈坤这个角色很赞！让我知道了...</a></li>
+					<li><a href="###">陈坤这个角色很赞！让我知道了...</a></li>
+					<li><a href="###">陈坤这个角色很赞！让我知道了...</a></li>
+					<li><a href="###">陈坤这个角色很赞！让我知道了...</a></li>
+				</ul>
+				<h2>我的帖子</h2>
+				<ul style="background-color: rgb(243,243,243);">
+					<li><a href="###">陈坤这个角色很赞！让我知道了...</a></li>
+					<li><a href="###">陈坤这个角色很赞！让我知道了...</a></li>
+					<li><a href="###">陈坤这个角色很赞！让我知道了...</a></li>
+					<li><a href="###">陈坤这个角色很赞！让我知道了...</a></li>
+					<li><a href="###">陈坤这个角色很赞！让我知道了...</a></li>
+				</ul>
+			</div>
+			<div id="index">
+				<h1><a href="#" style="text-decoration: none;color: #001100;">置顶
+						【发帖必读】为了维护#陈坤#超级话题讨论环境,与支持和喜爱陈坤的朋友们共同建立一个高质量信息获取与交流的平台,现#陈坤#超级话题管理团队制定如下版...【1分钟前】</a></h1>
+				<h1><a href="#" style="text-decoration: none;color: #001100;">置顶
+						【发帖必读】为了维护#陈坤#超级话题讨论环境,与支持和喜爱陈坤的朋友们共同建立一个高质量信息获取与交流的平台,现#陈坤#超级话题管理团队制定如下版...【6分钟前】</a></h1>
+				<h1><a href="#" style="text-decoration: none;color: #001100;">置顶
+						【发帖必读】为了维护#陈坤#超级话题讨论环境,与支持和喜爱陈坤的朋友们共同建立一个高质量信息获取与交流的平台,现#陈坤#超级话题管理团队制定如下版...【7分钟前】</a></h1>
+				<h1><a href="#" style="text-decoration: none;color: #001100;">置顶
+						【发帖必读】为了维护#陈坤#超级话题讨论环境,与支持和喜爱陈坤的朋友们共同建立一个高质量信息获取与交流的平台,现#陈坤#超级话题管理团队制定如下版...【8分钟前】</a></h1>
+			</div>
+			<div id="banner">
+				<img src="images/2.jpg" alt="第八期分享主题" />
+				<img src="images/3.jpg" alt="第八期分享主题" />
+				<img src="images/4.jpg" alt="第八期分享主题" />
+				<ul>
+					<li>●</li>
+					<li>●</li>
+					<li>●</li>
+				</ul>
+				<span></span>
+				<strong></strong>
+			</div>
+		</div>
+
+		<div id="share">
+			<h2>分享到</h2>
+			<ul>
+				<li><a href="###" class="a">一键分享</a></li>
+				<li><a href="###" class="b">新浪微博</a></li>
+				<li><a href="###" class="c">人人网</a></li>
+				<li><a href="###" class="d">百度相册</a></li>
+				<li><a href="###" class="e">腾讯朋友</a></li>
+				<li><a href="###" class="f">豆瓣网</a></li>
+				<li><a href="###" class="g">百度新首页</a></li>
+				<li><a href="###" class="h">和讯微博</a></li>
+				<li><a href="###" class="i">QQ 空间</a></li>
+				<li><a href="###" class="j">百度搜藏</a></li>
+				<li><a href="###" class="k">腾讯微博</a></li>
+				<li><a href="###" class="l">开心网</a></li>
+				<li><a href="###" class="m">百度贴吧</a></li>
+				<li><a href="###" class="n">搜狐微博</a></li>
+				<li><a href="###" class="o">QQ 好友</a></li>
+				<li><a href="###" class="p">更多...</a></li>
+			</ul>
+			<div class="share_footer"><a href="###">百度分享</a><span></span></div>
+		</div>
+
+		<div id="screen"></div>
+
+		<div id="test" style="clear:both;"></div>
+
+		<div class="footer">
+			<footer class="container">
+				<div class="dibu">
+					<div class="d_2">
+						<h3>联系我们 Contact US</h3>
+						<div class="address">
+							<ul>
+								<li>AAAA</li>
+								<li><strong>15501906883</strong></li>
+								<li>1510875867@qq.com</li>
+							</ul>
+						</div>
+					</div>
+					<div class="d_3">
+						<ul>
+							<li><img src="images/weixin.jpg" alt="666" title="666">
+								<p>微信号</p>
+							</li>
+						</ul>
+					</div>
+					<div class="clear"></div>
+					<div class="copy" style="float: left;">
+
+						<p>Copyright &copy; 2019-2021 1510875867@qq.com 邱邦能 版权所有 琼ICP12345678</p>
+
+					</div>
+				</div>
+			</footer>
+		</div>
+
+
+		<div class="side">
+			<ul>
+				<li><a href="javascript:if(confirm('你想要从服务器打开它吗?'))window.location='http://wpa.qq.com/msgrd?v=3&uin='+1510875867+'&site=1510875867&menu=yes','_brank'"
+					 rel="nofollow" target="_blank">
+						<div class="sidebox"><img src="images/side_icon04.png">QQ客服</div>
+					</a></li>
+
+				<li style="border:none;"><a href="javascript:scroll(0,0)" class="sidetop"><img src="images/side_icon05.png"></a></li>
+			</ul>
+		</div>
+	</body>
+</html>
